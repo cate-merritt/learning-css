@@ -1,0 +1,110 @@
+/* Style the website you made last week using CSS with the following requirements:
+    1. Use only external CSS file (no internal or inline styling)
+    2. Every element must be styled.
+    3. Create style rules using class, id, and element selectors. */
+
+    body {
+        font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt;  /*this styles the font for the whole body */
+        color: black; /*this will be the color of the text in the body */
+        background-color: #FFDFD3; /*this will be the color of the background*/
+        text-align: center; /*this aligns the text to center*/
+    } 
+    
+    p {
+        text-align: center;
+        color: #957DAD;
+        font-weight: bold;
+      } /*styles all <p> elements*/
+    
+    ul {
+        list-style-position: inside; /*makes bullets appear inside list item*/ 
+        height: 200px; /*sizing for list*/ 
+        text-align: center; /*centers the text to help with horizontal layout*/ 
+      }
+    
+      ul li {
+        background: #957DAD; /*creates background color for list and list items*/ 
+        color: black; /*text color*/ 
+        margin: 30px; /*sizing*/ 
+        border: 5px solid white; /*border size, type, color*/ 
+        border-radius: 8px; /*border rounding*/ 
+      }
+    
+      li {
+        display: inline-block;  /*creates horizontal layout for list*/ 
+      }
+    
+      nav  {
+        background-color: #957DAD; /*navigation bar color*/ 
+        border-style: solid; /*navigation bar border style*/ 
+        border-color: white; /*navigation bar border color*/ 
+        border-radius: 10px; /*navigation bar border rounding*/ 
+      }
+    
+      img {
+        border-radius: 8px;
+    } /*rounds the corners of all images*/
+    
+    table {
+        border-collapse: collapse; /*seperates the border*/
+        width: 100%; /*changes size, spreads out on screen*/
+    }
+    
+    th, td {
+        padding: 8px; /*adds space within cells*/
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    } /*this is my styling for table header and table data, creating inner border*/
+    
+    tr:hover {
+        background-color: #FEC8D8;
+    } /*this changes the color of individual table rows when the user hoovers over*/
+    
+    #box-model {
+        padding: 20px;
+        border-style: solid;
+        border-width: 5px;
+        margin: 30px;
+    } 
+    /*my table is inside of a HTML box-model so i could properlly format it*/
+    
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      } /*this styles the text boxes on my form*/
+    
+      input[type=button], input[type=submit]{
+        background-color: #D291BC;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        margin: 4px 2px;
+      } /*this styles the submit button on my form*/
+      
+      .loony-loon {
+        background-color: #957DAD;
+        color: black;
+        padding: 40px;
+        text-align: center;
+        border: 3px solid white;
+        border-radius: 8px;
+      } /*this is a class selector and styles all elements in this class*/
+    
+      #silly-loon {
+        background-color: red;
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border: 3px solid white;
+        border-radius: 8px;
+      } /*experimenting with ID attribute and selector*/
+    
+    h3 {
+        background-color:#FEC8D8;
+        padding: 30px;
+        text-align: center;
+        border: 3px dotted black;
+    } /*this should be my final element to be styled*/
